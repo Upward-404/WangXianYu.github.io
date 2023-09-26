@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Page1ToPage3.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .h2sty>a,
+        .logo {
+            color: white;
+        }
+
+        .h2sty>a {
+            text-decoration: none;
+        }
+
+        #shopheader {
+            width: 100%;
+            height: 600px;
+            background-image: url(shop/1.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .headerText {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 60px;
+            color: white;
+            font-size: 50px;
+            font-weight: 600;
+        }
+
+        .headerText:nth-child(2) {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        #shopsearch {
+            width: 100%;
+            height: 100px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .left {
+            width: 60%;
+            height: 100%;
+            background-color: rgb(143, 16, 16);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+        }
+
+        .right {
+            width: 40%;
+            height: 100%;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #inputbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 40px;
+            /* background-color: red; */
+        }
+
+        #Text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 100%;
+            background-color: rgb(255, 0, 0);
+            color: white;
+            font-weight: 600;
+        }
+
+        #shopBody {
+            width: 100%;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #bodybox {
+            width: 80%;
+            height: 80%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .leftbody {
+            width: 30%;
+            height: 100%;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .top,
+        .bottom {
+            color: white;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 20%;
+            background-color: rgb(143, 16, 16);
+            font-size: 50px;
+            font-weight: 700;
+        }
+
+        .midden {
+            width: 100%;
+            background-color: black;
+            height: 60%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            overflow: hidden;
+        }
+
+        .bottom {
+            flex-wrap: wrap;
+        }
+
+        .Phone {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50%;
+            width: 100%;
+            font-weight: 500;
+            font-size: 24px;
+        }
+
+        .Phone:nth-child(2) {
+            font-size: 34px;
+        }
+
+        .middenbox {
+            height: 18%;
+            width: 100%;
+            border: 1px solid rgb(255, 0, 0);
+            border-color: transparent transparent transparent transparent;
+            color: white;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(100%);
+        }
+
+        .middenbox:nth-child(1) {
+            border-color: transparent transparent red transparent;
+        }
+
+        .rightbody {
+            width: 60%;
+            height: 100%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-content: space-between;
+            flex-wrap: wrap;
+            overflow: hidden;
+        }
+
+        .shopbox {
+            width: 30%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+            overflow: hidden;
+            /* transform: translateY(-100%); */
+        }
+
+        .shopbox_img {
+            width: 90%;
+            height: 70%;
+            background-size: cover;
+            transition: all 1s;
+        }
+
+        .shopbox_text {
+            width: 100%;
+            height: 10%;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            font-size: 20px;
+            color: black;
+        }
+        .shopbox_img:hover{
+            transform: translateY(-20px);
+            transition: all 1s;
+            cursor: pointer;
+        }
+        #f {
+            width: 100%;
+            height: 240px;
+            overflow: hidden;
+            display: flex;
+            margin-top: 50px;
+        }
+        .box {
+            width: 10%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            background-color: black;
+        }
+
+        .center {
+            width: 100%;
+            height: 50px;
+            color: white;
+            font-size: 45px;
+            display: flex;
+            justify-content: end;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header" style="background-color: rgb(0, 0, 0);transform: translateY(-70px);">
+        <div class="head">
+            <div class="logo"><span style="color: red;">L</span>O<span style="color: rgb(64, 219, 236)">G</span>O</div>
+            <div class="logo">
+                <div class="text">
+                    <div class="h2sty"><a href="index.html"><span>首页</span></a></div>
+                </div>
+                <div class="text">
+                    <div class="h2sty"><a href="#"><span>商品购买</span></a></div>
+                </div>
+                <div class="text">
+                    <div class="h2sty"><a href="serve.html"><span>服务介绍</span></a></div>
+                </div>
+                <div class="text">
+                    <div class="h2sty"><a href="news.html"><span>新闻动态</span></a></div>
+                </div>
+                <div class="text">
+                    <div class="h2sty"><a href="we.html"><span>关于我们</span></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="shopheader">
+        <div class="headerText">Welcome</div>
+        <div class="headerText">拥有世界先进的全自动生产设备，
+            技术与成熟工艺，严格质量控制，具备丰富的产品加工制
+            造的经验与能力，确保为客户提供高质量产品。</div>
+    </div>
+    <div id="shopsearch">
+        <div class="left">热门搜索: 测绘仪器专区 三坐标测量机 硬度计 制样设备 显微镜 试验机</div>
+        <div class="right">
+            <div id="inputbox">
+                <input type="text" style="height: 38px;width: 240px;" placeholder="请输入商品">
+                <div id="Text">搜索</div>
+            </div>
+        </div>
+    </div>
+    <div id="shopBody">
+        <div id="bodybox">
+            <div class="leftbody">
+                <div class="top">
+                    <div class="shoptype">ShopType</div>
+                </div>
+                <div class="midden">
+                    <div class="middenbox">ShopOne</div>
+                    <div class="middenbox">ShopTwo</div>
+                    <div class="middenbox">ShopThree</div>
+                    <div class="middenbox">ShopFour</div>
+                    <div class="middenbox">ShopFive</div>
+                </div>
+                <div class="bottom">
+                    <div class="Phone">THE-PHONE</div>
+                    <div class="Phone">XXX-XXXXXX</div>
+                </div>
+            </div>
+            <div class="rightbody">
+                <div class="shopbox">
+                    <div class="shopbox_img" style="background-image: url(shop/2.jpg);"></div>
+                    <div class="shopbox_text">ShopName</div>
+                    <div class="shopbox_text" style="font-size: 16px;">售价：XXX </div>
+                </div>
+                <div class="shopbox">
+                    <div class="shopbox_img" style="background-image: url(shop/3.jpg);"></div>
+                    <div class="shopbox_text">ShopName</div>
+                    <div class="shopbox_text" style="font-size: 16px;">售价：XXX </div>
+                </div>
+                <div class="shopbox">
+                    <div class="shopbox_img" style="background-image: url(shop/4.jpg);"></div>
+                    <div class="shopbox_text">ShopName</div>
+                    <div class="shopbox_text" style="font-size: 16px;">售价：XXX </div>
+                </div>
+                <div class="shopbox">
+                    <div class="shopbox_img" style="background-image: url(shop/5.jpg);"></div>
+                    <div class="shopbox_text">ShopName</div>
+                    <div class="shopbox_text" style="font-size: 16px;">售价：XXX </div>
+                </div>
+                <div class="shopbox">
+                    <div class="shopbox_img" style="background-image: url(shop/6.jpg);"></div>
+                    <div class="shopbox_text">ShopName</div>
+                    <div class="shopbox_text" style="font-size: 16px;">售价：XXX </div>
+                </div>
+                <div class="shopbox">
+                    <div class="shopbox_img" style="background-image: url(shop/2.jpg);"></div>
+                    <div class="shopbox_text">ShopName</div>
+                    <div class="shopbox_text" style="font-size: 16px;">售价：XXX </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="f">
+        <div class="box box1"></div>
+        <div class="box box1"></div>
+        <div class="box box1"></div>
+        <div class="box box1"></div>
+        <div class="box box1">
+            <span class="center"><span style="color: red;">W</span>EB</span>
+        </div>
+        <div class="box box2">
+            <span class="center" style="justify-content: start;"><span style="color: aqua;">S</span>ITE
+        </div>
+        <div class="box box2"></div>
+        <div class="box box2"></div>
+        <div class="box box2"></div>
+        <div class="box box2"></div>
+    </div>
+
+    <script>
+var box3 = document.querySelectorAll('.box1');
+        var box4 = document.querySelectorAll('.box2');
+
+        for (var i = 0; i < box3.length; i++) {
+            (function (i) {
+                if (i % 2 == 0) {
+                    box3[i].style.transform = 'translateY(240px)';
+                    box4[i].style.transform = 'translateY(-240px)';
+                }
+                else {
+                    box3[i].style.transform = 'translateY(-240px)';
+                    box4[i].style.transform = 'translateY(240px)';
+                }
+            }(i))
+        }
+        window.onload = function () {
+            document.getElementById('header').style.transform = 'translate(0px)';
+            document.getElementById('header').style.transition = 'all 1s';
+            var shop = document.querySelectorAll('.shopbox');
+            for(var i=0;i<shop.length;i++){
+                (function(i){
+                    i <= 2 ? shop[i].style.transform = 'translateY(-100%)' : shop[i].style.transform = 'translateY(100%)';    
+                }(i))
+            }
+        }
+        var shopType = document.querySelectorAll('.middenbox');
+        for(var i=0;i<shopType.length;i++){
+            (function(i){
+                shopType[i].onclick = function(){
+                    alert("真的肝不动了!QAQ");
+                }   
+            }(i))
+            
+        }
+        window.onscroll = function () {
+            var shop = document.querySelectorAll('.shopbox');
+            if(document.documentElement.scrollTop >= 50){
+                for(var i=0;i<shop.length;i++){
+                (function(i){
+                    shop[i].style.transition = 'all 1s'
+                    i <= 2 ? shop[i].style.transform = 'translateY(0)' : shop[i].style.transform = 'translateY(0)';    
+                }(i))
+            }
+            }
+            if (document.documentElement.scrollTop >= 185) {
+                var sheep = 0.5;
+                for (var i = 0; i < shopType.length; i++) {
+                    shopType[i].style.transform = 'translate(0px)';
+                    shopType[i].style.transition = 'all ' + sheep + 's';
+                    sheep += 0.4;
+                }
+            }
+            if(document.documentElement.scrollTop >= 770){
+                var sheep = 0.8;
+                for (var i = box3.length - 1, k = i; i >= 0; i--) {
+                    (function (i) {
+                        if (i % 2 == 0) {
+                            box3[i].style.transform = 'translateY(0px)';
+                            box4[k - i].style.transform = 'translateY(0px)';
+                            box3[i].style.transition = 'all ' + sheep + 's';
+                            box4[k - i].style.transition = 'all ' + sheep + 's';
+                            sheep += 0.5;
+                        }
+                        else {
+                            box3[i].style.transform = 'translateY(0px)';
+                            box4[k - i].style.transform = 'translateY(0px)';
+                            box3[i].style.transition = 'all ' + sheep + 's';
+                            box4[k - i].style.transition = 'all ' + sheep + 's';
+                            sheep += 0.5;
+                        }
+                    }(i))
+                }
+            }
+        }
+        for (var i = 0; i < shopType.length; i++) {
+            (function (i) {
+                shopType[i].onmouseover = function () {
+                    shopType[0].style.borderColor = 'transparent transparent transparent transparent'
+                    shopType[i].style.cursor = 'pointer';
+                    shopType[i].style.transition = 'all 0.5s';
+                    shopType[i].style.borderColor = 'transparent transparent red transparent';
+                }
+                shopType[i].onmouseout = function () {
+                    shopType[0].style.borderColor = 'transparent transparent red transparent'
+                    shopType[i].style.borderColor = 'transparent transparent transparent transparent';
+                    shopType[i].style.cursor = 'pointer';
+                }
+            }(i))
+        }
+    </script>
+</body>
+
+</html>

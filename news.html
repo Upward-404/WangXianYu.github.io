@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Page1ToPage3.css">
+    <style>
+        body {
+            overflow: auto;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #slidehow {
+            width: 100vm;
+            height: 500px;
+            background-image: url(newsimg/newshead.jpg);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .slideText {
+            width: 100vm;
+            height: 100px;
+            font-size: 40px;
+            font-weight: 700;
+            color: rgb(100, 43, 10);
+            display: flex;
+            align-items: center;
+        }
+        .slideText:nth-child(1)>span {
+            width: auto;
+            height: 58px;
+            border: 2px solid rgb(100, 43, 10);
+            border-color: transparent transparent rgb(100, 43, 10) transparent;
+
+        }
+        .slideText:nth-child(2) {
+            height: 50px;
+            font-size: 20px;
+            font-weight: 400;
+            color: rgb(230, 132, 66);
+        }
+
+        .slideText>span {
+            margin-left: 100px;
+        }
+
+        #newsbody {
+            width: 100vm;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .newsbox {
+            width: 100%;
+            height: 70px;
+
+        }
+
+        .newsbox:nth-child(2) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .newsbox:nth-child(3) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -50px;
+        }
+
+        .newsbox:nth-child(1) {
+            font-size: 35px;
+            font-weight: 700;
+            color: rgb(100, 43, 10);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .newsbox:nth-child(2)>span {
+            height: 4px;
+            width: 100px;
+            background-color: black;
+            margin-top: -74px;
+        }
+
+        .newsTypeUp {
+            width: 600px;
+            height: 90%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .newsType {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: white;
+            width: 180px;
+            height: 100%;
+            border: transparent;
+            background-color: rgba(231, 118, 13, 0.563);
+            box-shadow: 2px 2px 5px gray;
+        }
+
+        .newsType:nth-child(1) {
+            background-color: rgb(100, 43, 10);
+        }
+
+        #newsbody1 {
+            width: 80%;
+            height: 180px;
+            border: 1px solid rgb(0, 0, 0);
+            border-color: transparent transparent black transparent;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .img1 {
+            width: 20%;
+            height: 180px;
+            background-size: cover;
+        }
+
+        .newsRight1 {
+            width: 80%;
+            height: 180px;
+
+        }
+
+        #Right_text {
+            width: 100%;
+            height: 100%;
+            margin-left: 30px;
+        }
+
+        .Text {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 60px;
+            font-size: 18px;
+        }
+
+        .Text:nth-child(2) {
+            font-size: 14px;
+            color: gray;
+        }
+
+        .Text:nth-child(3) {
+            font-size: 16px;
+            color: rgb(100, 100, 100);
+        }
+
+        #HiddenBox {
+            height: 230px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        #newsbody1:nth-child(1) {
+            transform: translateY(230px);
+        }
+
+        #Body {
+            display: flex;
+            flex-direction: column;
+        }
+        .h2sty>a{
+            text-decoration: none;
+            color: white;
+        }
+        #f {
+            width: 100%;
+            height: 240px;
+            overflow: hidden;
+            display: flex;
+            margin-top: 50px;
+        }
+        .box {
+            width: 10%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            background-color: black;
+        }
+
+        .center {
+            width: 100%;
+            height: 50px;
+            color: white;
+            font-size: 45px;
+            display: flex;
+            justify-content: end;
+        }
+        .newsType:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <div id="header" style="background-color: rgb(100, 43, 10);transform: translateY(-70px);">
+        <div class="head">
+            <div class="logo"><span style="color: red;">L</span>O<span style="color: rgb(64, 219, 236)">G</span>O</div>
+            <div class="logo">
+                <div class="text">
+                    <div class="h2sty"><a href="index.html"><span>首页</span></a></div>
+                </div>
+                <div class="text">
+                    <div class="h2sty"><a href="shop.html"><span>商品购买</span></a></div>
+                </div>
+                <div class="text">
+                    <div class="h2sty"><a href="serve.html"><span>服务介绍</span></a></div>
+                </div>
+                <div class="text">
+                    <div class="h2sty"><a href="#"><span>新闻动态</span></a></div>
+                </div>
+                <div class="text">
+                    <div class="h2sty"><a href="we.html"><span>关于我们</span></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="slidehow">
+        <div class="slideText">
+            <span>新闻动态</span>
+        </div>
+        <div class="slideText">
+            <span>聚焦较新新闻，熟悉行业动态，短时间了解您较新的新闻动态</span>
+        </div>
+    </div>
+    <div id="newsbody">
+        <div class="newsbox">新闻咨询</div>
+        <div class="newsbox"><span></span></div>
+        <div class="newsbox">
+            <div class="newsTypeUp">
+                <button value="2" class="newsType" onclick="but_click(this)">公司咨询</button>
+                <button value="1" class="newsType" onclick="but_click(this)">行业咨询</button>
+                <button value="1" class="newsType" onclick="but_click(this)">前沿咨询</button>
+            </div>
+        </div>
+    </div>
+    <div style="width: 100%;height: 900px;" id="Body">
+        <!-- 隐藏盒子用于动画制作 -->
+        <div id="HiddenBox">
+            <div id="newsbody1" class="move">
+                <div class="img1" style="background-image: url(newsimg/1.jpg);"></div>
+                <div class="newsRight1">
+                    <div id="Right_text">
+                        <div class="Text">
+                            [公司新闻] 公司因业务发展需要招聘5名外贸业务员
+                        </div>
+                        <div class="Text">2019-01-02</div>
+                        <div class="Text">
+                            微动开关是一种施压促动的快速开关，又叫灵敏开关。
+                            一种行程很小的、瞬时动作的主令电器. 微动开关是小
+                            型的接触开关，手轻轻碰一下就接通，工厂里常用作
+                            大开关内部的短路、过流保护. 当外界机械力作用于
+                            操作钮时，操作钮便向下运动，通过拉钩将弹簧拉伸。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="HiddenBox">
+            <div id="newsbody1" class="move">
+                <div class="img1" style="background-image: url(newsimg/2.jpg);"></div>
+                <div class="newsRight1">
+                    <div id="Right_text">
+                        <div class="Text">
+                            [公司新闻] 公司因业务发展需要招聘5名外贸业务员
+                        </div>
+                        <div class="Text">2019-01-02</div>
+                        <div class="Text">
+                            微动开关是一种施压促动的快速开关，又叫灵敏开关。
+                            一种行程很小的、瞬时动作的主令电器. 微动开关是小
+                            型的接触开关，手轻轻碰一下就接通，工厂里常用作
+                            大开关内部的短路、过流保护. 当外界机械力作用于
+                            操作钮时，操作钮便向下运动，通过拉钩将弹簧拉伸。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="HiddenBox">
+            <div id="newsbody1" class="move">
+                <div class="img1" style="background-image: url(newsimg/3.jpg);"></div>
+                <div class="newsRight1">
+                    <div id="Right_text">
+                        <div class="Text">
+                            [公司新闻] 公司因业务发展需要招聘5名外贸业务员
+                        </div>
+                        <div class="Text">2019-01-02</div>
+                        <div class="Text">
+                            微动开关是一种施压促动的快速开关，又叫灵敏开关。
+                            一种行程很小的、瞬时动作的主令电器. 微动开关是小
+                            型的接触开关，手轻轻碰一下就接通，工厂里常用作
+                            大开关内部的短路、过流保护. 当外界机械力作用于
+                            操作钮时，操作钮便向下运动，通过拉钩将弹簧拉伸。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="HiddenBox">
+            <div id="newsbody1" class="move">
+                <div class="img1" style="background-image: url(newsimg/4.jpg);"></div>
+                <div class="newsRight1">
+                    <div id="Right_text">
+                        <div class="Text">
+                            [公司新闻] 公司因业务发展需要招聘5名外贸业务员
+                        </div>
+                        <div class="Text">2019-01-02</div>
+                        <div class="Text">
+                            微动开关是一种施压促动的快速开关，又叫灵敏开关。
+                            一种行程很小的、瞬时动作的主令电器. 微动开关是小
+                            型的接触开关，手轻轻碰一下就接通，工厂里常用作
+                            大开关内部的短路、过流保护. 当外界机械力作用于
+                            操作钮时，操作钮便向下运动，通过拉钩将弹簧拉伸。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="f">
+        <div class="box box1"></div>
+        <div class="box box1"></div>
+        <div class="box box1"></div>
+        <div class="box box1"></div>
+        <div class="box box1">
+            <span class="center"><span style="color: red;">W</span>EB</span>
+        </div>
+        <div class="box box2">
+            <span class="center" style="justify-content: start;"><span style="color: aqua;">S</span>ITE
+        </div>
+        <div class="box box2"></div>
+        <div class="box box2"></div>
+        <div class="box box2"></div>
+        <div class="box box2"></div>
+    </div>
+
+    <script>
+        var box3 = document.querySelectorAll('.box1');
+        var box4 = document.querySelectorAll('.box2');
+
+        for (var i = 0; i < box3.length; i++) {
+            (function (i) {
+                if (i % 2 == 0) {
+                    box3[i].style.transform = 'translateY(240px)';
+                    box4[i].style.transform = 'translateY(-240px)';
+                }
+                else {
+                    box3[i].style.transform = 'translateY(-240px)';
+                    box4[i].style.transform = 'translateY(240px)';
+                }
+            }(i))
+        }
+
+
+        window.onload = function(){
+            document.getElementById('header').style.transform = 'translate(0px)';
+            document.getElementById('header').style.transition = 'all 1s';
+        }
+        var box1 = document.querySelectorAll('.move');
+        window.onscroll = function () {
+            if (document.documentElement.scrollTop >= 70) {
+                box1[0].style.transform = 'translateY(0px)';
+                box1[0].style.transition = 'all 2s'
+            }
+            if (document.documentElement.scrollTop >= 200) {
+                box1[1].style.transform = 'translateY(0px)';
+                box1[1].style.transition = 'all 2s'
+            }
+            if (document.documentElement.scrollTop >= 420) {
+                box1[2].style.transform = 'translateY(0px)';
+                box1[2].style.transition = 'all 2s'
+            }
+            if (document.documentElement.scrollTop >= 600) {
+                box1[3].style.transform = 'translateY(0px)';
+                box1[3].style.transition = 'all 2s'
+            }
+            if (document.documentElement.scrollTop >= 850){
+                var sheep = 0.8;
+                for (var i = box3.length - 1, k = i; i >= 0; i--) {
+                    (function (i) {
+                        if (i % 2 == 0) {
+                            box3[i].style.transform = 'translateY(0px)';
+                            box4[k - i].style.transform = 'translateY(0px)';
+                            box3[i].style.transition = 'all ' + sheep + 's';
+                            box4[k - i].style.transition = 'all ' + sheep + 's';
+                            sheep += 0.5;
+                        }
+                        else {
+                            box3[i].style.transform = 'translateY(0px)';
+                            box4[k - i].style.transform = 'translateY(0px)';
+                            box3[i].style.transition = 'all ' + sheep + 's';
+                            box4[k - i].style.transition = 'all ' + sheep + 's';
+                            sheep += 0.5;
+                        }
+                    }(i))
+                }
+            }
+
+        }
+        //鼠标点击按钮切换颜色
+        var but = document.querySelectorAll('.newsType');
+        function but_click(ele){
+            but[0].value = '1';
+            ele.value = '2';
+            for(var i=0;i<but.length;i++){
+                but[i].value == '2' ? but[i].style.background = 'rgb(100, 43, 10)' : but[i].style.background = 'rgba(231, 118, 13, 0.563)';
+            }
+            ele.value = '1';
+        }
+
+    </script>
+</body>
+
+</html>

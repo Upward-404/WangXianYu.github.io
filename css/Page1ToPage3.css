@@ -1,0 +1,231 @@
+.section {
+    width: 100vm;
+    height: 100vh;
+}
+
+#header {
+    width: 100%;
+    height: 70px;
+    /* background-color: red; */
+    position: fixed;
+    z-index: 1;
+}
+
+.head {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.logo {
+    height: 100%;
+    width: 50%;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 70px;
+}
+
+.logo:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+}
+
+#body_text {
+    width: 700px;
+    height: 200px;
+}
+
+.textChild {
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.textChild:nth-child(2) {
+    float: right;
+}
+
+.textCode {
+    width: 80px;
+    font-size: 60px;
+    font-family: '宋体';
+    color: white;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    filter: blur(20px);
+    opacity: 0;
+}
+
+.h2sty {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    line-height: 70px;
+    padding-bottom: 10px;
+}
+
+.h2sty span {
+    /* 此时背景线条位于右边,所以起始位置在右边 */
+    /* no-repeat:设置了no-repeat这个属性后，你的背景图将不会被重复 不会出现平铺等现象 */
+    background: linear-gradient(to right, red, rgb(64, 219, 236)) no-repeat right bottom;
+    /* background-size: 宽度 高度 */
+    background-size: 0 3px;
+    transition: background-size 500ms;
+    padding-bottom: 4px;
+}
+
+.h2sty span:hover {
+    /* 背景定位x轴在左边 */
+    /* 鼠标移入时背景定位于左边所以动画起始位置为左边 鼠标移出后为右边(默认右边) */
+    background-position-x: center;
+    background-size: 100% 3px;
+    cursor: pointer;
+}
+
+/* 首页设置 */
+.Page2_Click {
+    background: linear-gradient(to right, rgb(243, 119, 31), rgb(64, 219, 236)) no-repeat right bottom;
+    background-size: 100% 0;
+    transition: background-size 500ms;
+}
+
+.Page2_Click:hover,
+.Page3_Click1:hover,
+.Page3_Click2:hover,
+.Page3_Click3:hover{
+    background-position-y: bottom;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.Page3_Click1 {
+    background: linear-gradient(to right, rgb(104, 48, 7), rgb(250, 173, 56)) no-repeat right bottom;
+    background-size: 100% 0;
+    transition: background-size 500ms;
+}
+
+.Page3_Click2 {
+    background: linear-gradient(to right, rgb(215, 32, 32), rgb(5, 137, 27)) no-repeat right bottom;
+    background-size: 100% 0;
+    transition: background-size 500ms;
+}
+.Page3_Click3{
+    background: linear-gradient(to right, rgb(188, 224, 91), rgb(106, 195, 251)) no-repeat right bottom;
+    background-size: 100% 0;
+    transition: background-size 500ms;
+}
+
+.Page2_Click,
+.Page3_Click1,
+.Page3_Click2,
+.Page3_Click3{
+    width: 140px;
+    height: 50px;
+    border: 1px solid rgb(147, 146, 146);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Page3_Click3{
+    transform: translateY(60px);
+}
+#Page2_body,
+#Page3_Body1,
+#Page3_Body2 {
+    width: 500px;
+    height: 300px;
+    /* border: 1px solid rgb(255, 255, 255); */
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+#Page3_Body1 {
+    /* border: 1px solid white; */
+    margin-left: 60%;
+    color: white;
+}
+
+.Page3_text1,
+.Page2_text,
+.Page3_text2 {
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid white; */
+    color: white;
+    font-size: 30px;
+    font-family: '楷体';
+    line-height: 100px;
+}
+
+.Page2_text:nth-child(1),
+.Page3_text1:nth-child(1),
+.Page3_text2:nth-child(1) {
+    font-size: 36px;
+    font-weight: 600;
+    font-family: '微软雅黑';
+    margin-left: -150px;
+}
+
+.Page2_text:nth-child(2),
+.Page3_text1:nth-child(2),
+.Page3_text2:nth-child(2) {
+    margin-left: 500px;
+}
+
+.Page3_text1:nth-child(2),
+.Page3_text2:nth-child(2) {
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.Page2_text:nth-child(3){
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+.Page3_text1:nth-child(3){
+    margin-top: 160px;
+}
+.Page3_text2:nth-child(3){
+    margin-top: 160px;
+}
+
+.Page3_text1:nth-child(3) {
+    margin-top: 140px;
+}
+
+#Page3_Body3 {
+    width: 1000px;
+    height: 600px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-top: 100px;
+}
+.Body1,.Body2{
+    /* border: 1px solid white; */
+    height: 240px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+.Page3_box{
+    height: 100%;
+    width: 480px;
+    
+}
+.Page3_box:nth-child(1){
+    transform: translate(-482px);
+}
+.Page3_box:nth-child(2){
+    transform: translate(482px);
+}
